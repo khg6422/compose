@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+/* ===== header ===== */
+.video-box {
+    position: relative;
+}
+
+video,
+source {
+    width: 100%; height: auto;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: -1;
+}
+
+.head-bar {
+    width: 100%;
+    background-color: white;
+    padding: 14px;
+}
+
+.head-bar > img {
+    width: 150px;
+    margin-top: 5px;
+}
+
+.gnb {
+    display: none;
+}
+
