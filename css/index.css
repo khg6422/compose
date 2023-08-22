@@ -12,14 +12,14 @@
 .head-bar {
     width: 100%;
     background-color: white;
-    padding: 18px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.head-bar > img {
+.head-bar > h1 > img {
     width: 150px;
-    margin-top: 5px;
 }
 
 /* gnb */
@@ -30,6 +30,7 @@
 /* mo-btn */
 .mo-btn {
     width: 30px; height: 20px;
+    cursor: pointer;
 }
 
 .mo-btn > span {
@@ -122,4 +123,60 @@ video {
     position: relative;
 }
 
-/**/
+/* slide */
+.slide-img {
+    display: flex;
+}
+
+.slide img {
+    width: 100%;
+}
+
+/* shop */
+.shop > h2 {
+    text-align: center;
+    letter-spacing: -1px;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.shop > hr {
+    margin: 0 auto;
+    width: 50px;
+    margin-bottom: 30px;
+}
+
+.shop > p {
+    text-align: center;
+    letter-spacing: -1px;
+    margin-bottom: 30px;
+}
+
+.shop > .shop-button {
+    margin: 0 auto;
+    margin-bottom: 70px;
+    width: 180px; height: 44px;
+    background: black;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.shop > .shop-button > p {
+    text-align: center;
+    color: white;
+    line-height: 44px;
+}
+
+.shop-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.shop-img > .shop-space {
+    margin: 10px;
+}
+
+.shop-img > .shop-space > img {
+    max-width: 100%;
+}
