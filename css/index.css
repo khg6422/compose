@@ -12,7 +12,7 @@
 .head-bar {
     width: 100%;
     background-color: white;
-    padding: 10px;
+    padding: 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -205,7 +205,7 @@ video {
 
 .shop-img > .shop-space > div {
     position: absolute;
-    top: 146px; left: 0;
+    bottom: 0; left: 0;
     background-color: rgba(0, 0, 0, 0.8);
     height: 20%; width: 100%;
 }
@@ -232,23 +232,55 @@ video {
     width: 100%; height: 100%;
 }
 
-.info-box1 > .pack {
+.info-box1 > .pack1 {
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
+    width: 400PX;
 }
 
-.info-box1 > .pack > p {
+.info-box1 > .pack1 > p {
     text-align: center;
+    color: white;
+    letter-spacing: -1px;
+}
+
+.info-box1 > .pack1 > p:first-child {
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+.info-box1 > .pack1 > hr {
+    border: 1px solid white;
+    width: 50px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.info-box1 > .pack1 > .add-btn1 {
+    margin: 0 auto;
+    margin-top: 60px;
+    text-align: center;
+    border: 1px solid white;
+    padding: 15px;
+    width: 170px;
+    cursor: pointer;
+}
+
+.info-box1 > .pack1 > .add-btn1:hover {
+    background-color: white;
+}
+
+.info-box1 > .pack1 > .add-btn1 > p {
     color: white;
 }
 
-.info-box1 > .pack > p:first-child {
-    font-size: 26px;
+.info-box1 > .pack1 > .add-btn1:hover > p {
+    color: black;
 }
 
-.info-box1 > .wrapper > .pack {
+.info-box1 > .wrapper > .pack2 {
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, 75%);
@@ -259,3 +291,8 @@ video {
     width: 100%;
     min-width: 1200px;
 } 
+
+.info-box2 > img {
+    width: 100%;
+    min-width: 1000px;
+}
