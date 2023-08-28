@@ -230,7 +230,7 @@ video {
     position: absolute;
     left: 0; top: 0;
     content: '';
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
     width: 100%; height: 100%;
 }
 
@@ -288,6 +288,40 @@ video {
 }
 
 /* info-li */
+.info-li1,
+.info-li2,
+.info-li3 {
+    position: relative;
+}
+
+.info-li1::after,
+.info-li2::after,
+.info-li3::after {
+    position: absolute;
+    left: 0; top: 0;
+    content: '';
+    width: 100%; height: 100%;
+}
+
+.info-li1 > .info-t,
+.info-li2 > .info-t,
+.info-li3 > .info-t {
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 1;
+    padding: 50px;
+}
+
+.info-t > p:first-child {
+    color: #ffd901;
+    margin-bottom: 5px;
+}
+
+.info-t > p:last-child {
+    color: white;
+    font-size: 26px;
+} 
+
 .info-li1 > img {
     max-width: 800px;
 }
@@ -298,11 +332,15 @@ video {
 }
 
 /* info-box2 */
-.info-box2 .pack2 {
+.info-box2 > .wrapper {
     position: absolute;
     top: 50%; left: 50%;
-    transform: translate(-50%, 30%);
+    transform: translate(-50%, -50%);
     z-index: 1;
+}
+
+.info-box2 > img {
+    height: 1000px;
 }
 
 .info-box2 .pack2 > p {
@@ -324,11 +362,53 @@ video {
 }
 
 .info-box2 .pack2 > .memo-box {
+    margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
 .info-box2 .pack2 > .memo-box > .memo {
-    height: auto;
+    margin: 10px 15px;
+    padding: 20px;
+    height: 280px;
     background-color: rgba(255, 255, 255, 0.6);
+}
+
+.info-box2 .pack2 > .memo-box > .memo > a {
+    text-align: justify;
+    letter-spacing: -1px;
+}
+
+.info-box2 .pack2 > .memo-box > .memo > a:hover {
+    color: #ffd901;
+}
+
+.info-box2 .pack2 > .memo-box > .memo > p {
+    font-size: 14px;
+    color: #444;
+    text-align: justify;
+    margin-top: 22px;
+    letter-spacing: -1px;
+}
+
+.info-box2 .pack2 > .add-btn2 {
+    margin: 0 auto;
+    margin-top: 60px;
+    text-align: center;
+    border: 1px solid white;
+    padding: 5px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.info-box2 .pack2 > .add-btn2:hover {
+    background-color: white;
+}
+
+.info-box2 .pack2 > .add-btn2 > p {
+    color: white;
+}
+
+.info-box2 .pack2 > .add-btn2:hover > p {
+    color: black;
 }
