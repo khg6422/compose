@@ -431,13 +431,17 @@ footer {
     margin-right: 10px;
 }
 
-.rule > p {
+.rule > p > a {
     font-size: 13px;
     letter-spacing: -1px;
     color: #ccc;
 }
 
 /* foot-info */
+.foot-info {
+    margin-bottom: 50px;
+}
+
 .foot-info > p {
     text-align: center;
     font-size: 15px;
@@ -449,8 +453,19 @@ footer {
 /* foot-fix */
 .foot-fix {
     width: 100%; height: 56px;
+    padding: 20px 40px;
     background-color: #ffd901;
     position: fixed;
     bottom: 0; left: 0;
     z-index: 1;
+}
+
+.foot-fix > ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot-fix > ul > li > a {
+    display: flex;
+    align-items: center;
 }
