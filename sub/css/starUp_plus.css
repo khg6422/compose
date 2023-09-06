@@ -3,7 +3,7 @@
 .wrapper {
     position: relative;
     width: 100%;
-    max-width: 800px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -54,7 +54,43 @@
 }
 
 /* ===== main ===== */
+/* main_img */
+.main_img {
+    position: relative;
+}
 
+.main_img > img {
+    width: 100%;
+    min-width: 1000px;
+}
+
+/* main_bar */
+.main_bar {
+    position: absolute;
+    bottom: 0; left: 0;
+    z-index: 1;
+    width: 100%;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.main_bar .gnb {
+    display: flex;
+}
+
+.gnb > li {
+    padding: 0 15px;
+}
+
+.gnb > li:first-child,
+.gnb > li:nth-child(2) {
+    display: none;
+}
+
+.gnb > li > p {
+    color: white;
+    font-size: 17px;
+}
 
 /* ===== footer ===== */
 footer {
