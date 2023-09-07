@@ -92,6 +92,44 @@
     font-size: 17px;
 }
 
+/* icon-box */
+.icon-box > .wrapper {
+    max-width: 800px;
+} 
+
+.icon-list {
+    display: grid;
+    grid-template-columns: repeat(2,4fr);
+    margin: 0 auto;
+}
+
+.icon-list > li {
+    text-align: center;
+    margin: 20px;
+}
+
+.icon-list > li > img {
+    padding: 70px 0;
+    margin: 0 auto;
+}
+
+.icon-list > li > p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.icon-list > li > span {
+    font-size: 14px;
+    color: #8a8a8a;
+}
+
+.icon-list > li:last-child > p {
+    color: skyblue;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: -2px;
+}
+
 /* ===== footer ===== */
 footer {
     padding: 24px 10px;
