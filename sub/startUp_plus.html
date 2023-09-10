@@ -97,23 +97,23 @@
         <div class="input-box">
             <div class="wrapper">
                 <div class="name">
-                    <label for="name">성명<span>*</span></label>
+                    <label id="name" for="name">성명<span>*</span></label>
                     <input type="text" name="name">
                 </div> <!-- name -->
 
                 <div class="phone">
-                    <label for="phone">연락처<span>*</span></label>
+                    <label id="phone" for="phone">연락처<span>*</span></label>
                     <input type="tel" name="phone">
                 </div> <!-- phone -->
 
                 <div class="email">
-                    <label for="email">이메일 주소<span>*</span></label>
+                    <label id="email" for="email">이메일 주소<span>*</span></label>
                     <input type="email" name="email">
                 </div> <!-- email -->
 
                 <div class="region">
-                    <label for="region">창업 희망 지역<span>*</span></label>
-                    <select name="region">
+                    <label id="region1" for="region">창업 희망 지역<span>*</span></label>
+                    <select id="region2" name="region2">
                         <option value="si-do">시/도 선택</option>
                         <option value="seoul">서울특별시</option>
                         <option value="incyhun">인천광역시</option>
@@ -122,7 +122,7 @@
                         <option value="daegu">대구광역시</option>
                         <option value="oulsan">울산광역시</option>
                     </select>
-                    <select name="region2">
+                    <select id="region3" name="region3">
                         <option value="gu-gun">구/군 선택</option>
                         <option value="gangnam">강남구</option>
                         <option value="gangdong">강동구</option>
@@ -132,7 +132,7 @@
                 </div> <!-- region -->
 
                 <div class="money">
-                    <label for="region">창업 희망 비용<span>*</span></label>
+                    <label id="money" for="region">창업 희망 비용<span>*</span></label>
                     <select name="money">
                         <option value="gu-gun">1억 5천</option>
                         <option value="gangnam">1억</option>
@@ -142,29 +142,32 @@
                 </div> <!-- money -->
 
                 <div class="true-false">
-                    <label for="true-false">상가 확보 유무<span>*</span></label>
-                    <label>
-                        <input type="radio" name="shop">                                
-                        없음
-                    </label>
-
-                    <label>
-                        <input type="radio" name="shop">
-                        있음-특수매장(사내카페ㆍ백화점ㆍ병원ㆍ호텔 등)
-                    </label>
-
-                    <label>
-                        <input type="radio" name="shop">                            있음-일반매장(로드샵 등)
-                    </label>
+                    <label id="true-false" for="true-false">상가 확보 유무<span>*</span></label>
+                    <div class="radio-flex">
+                        <label>
+                            <input type="radio" name="shop">                                
+                            없음
+                        </label>
+    
+                        <label>
+                            <input type="radio" name="shop">
+                            있음-특수매장(사내카페ㆍ백화점ㆍ병원ㆍ호텔 등)
+                        </label>
+    
+                        <label>
+                            <input type="radio" name="shop">                            
+                            있음-일반매장(로드샵 등)
+                        </label>
+                    </div> <!-- radio-flex -->
                 </div> <!--true-false -->
 
                 <div class="address">
-                    <label for="address">상가 주소</label>
+                    <label id="address" for="address">상가 주소</label>
                     <input type="text" name="address">
                 </div> <!-- address -->
 
                 <div class="py">
-                    <label for="py">매장 희망 평수<span>*</span></label>
+                    <label id="py" for="py">매장 희망 평수<span>*</span></label>
                     <select name="py">
                         <option value="10py">10py 이하</option>
                         <option value="12py">12py</option>
@@ -176,7 +179,7 @@
                 </div> <!-- py -->
 
                 <div class="time">
-                    <label for="time">희망 창업 시기<span>*</span></label>
+                    <label id="time" for="time">희망 창업 시기<span>*</span></label>
                     <select name="time">
                         <option value="10py">3개월</option>
                         <option value="12py">6개월</option>
@@ -185,7 +188,7 @@
                 </div> <!-- time -->
 
                 <div class="load">
-                    <label for="load">유입경로<span>*</span></label>
+                    <label id="load" for="load">유입경로<span>*</span></label>
                     <select name="load">
                         <option value="intro">지인소개</option>
                         <option value="wep">웹서칭</option>
@@ -193,9 +196,9 @@
                         <option value="etc">기타</option>
                     </select>
                 </div> <!-- load -->
-                <div class="text-area">
-                    <label for="etc-etc">기타내용<span>*</span></label>
-                    <input type="text" name="etc-etc">
+                <div class="etc-etc">
+                    <label id="etc-etc" for="etc-etc">기타내용<span>*</span></label>
+                    <textarea name="textarea" id="textarea"></textarea>
                 </div> <!-- text-area -->
                 <div class="submit">
                     <input type="submit" value="등록하기">
