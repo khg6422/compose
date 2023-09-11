@@ -352,7 +352,7 @@ video {
     margin-bottom: 30px;
 }
 
-.info-box1 > .pack1 > .add-btn1 {
+.info-box1 > .pack1 > a > .add-btn1 {
     margin: 0 auto;
     margin-top: 60px;
     text-align: center;
@@ -362,15 +362,15 @@ video {
     cursor: pointer;
 }
 
-.info-box1 > .pack1 > .add-btn1:hover {
+.info-box1 > .pack1 > a > .add-btn1:hover {
     background-color: white;
 }
 
-.info-box1 > .pack1 > .add-btn1 > p {
+.info-box1 > .pack1 > a > .add-btn1 > p {
     color: white;
 }
 
-.info-box1 > .pack1 > .add-btn1:hover > p {
+.info-box1 > .pack1 > a > .add-btn1:hover > p {
     color: black;
 }
 

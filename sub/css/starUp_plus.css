@@ -22,8 +22,29 @@
     width: 150px;
 }
 
-.head-bar > h2 {
-    display: none;
+/* mo-btn */
+.mo-btn {
+    width: 30px; height: 20px;
+    cursor: pointer;
+}
+
+.mo-btn > span {
+    width: 30px; height: 3px;
+    background-color: black;
+    display: block;
+}
+
+.mo-btn > span:first-child {
+    width: 15px;
+}
+
+.mo-btn > span:nth-child(2) {
+    margin: 5px 0;
+}
+
+.mo-btn > span:last-child {
+    width: 15px;
+    float: right;
 }
 
 /* PC버전 미디어쿼리 */
@@ -51,6 +72,34 @@
 .head-bar > h2 > img {
     width: 260px;
 }
+
+/* mo-btn */
+.mo-btn {
+    position: absolute;
+    top: 35px; right: 50px;
+    width: 30px; height: 20px;
+    cursor: pointer;
+}
+
+.mo-btn > span {
+    width: 40px; height: 4px;
+    background-color: black;
+    display: block;
+}
+
+.mo-btn > span:first-child {
+    width: 20px;
+}
+
+.mo-btn > span:nth-child(2) {
+    margin: 5px 0;
+}
+
+.mo-btn > span:last-child {
+    width: 20px;
+    position: absolute;
+    left: 20px;
+}
 }
 
 /* ===== main ===== */
@@ -75,6 +124,10 @@
 
 .main_bar .gnb {
     display: flex;
+}
+
+.main_bar > .wrapper {
+    max-width: 800px;
 }
 
 .gnb > li {
@@ -220,6 +273,65 @@
     background-color: #ffd901;
     cursor: pointer;
     border: none;
+}
+
+/* 모바일버전 미디어 쿼리 */
+@media(min-width:768px) {
+/* ===== main ===== */
+/* input-box */
+.input-box > .wrapper > div > input,
+.input-box > .wrapper > div > select {
+    width: 600px; height: 40px;
+}
+
+.input-box > .wrapper > div > #region2,
+.input-box > .wrapper > div > #region3 {
+    width: 298px;
+}
+
+.input-box > .wrapper > div > #etc-etc {
+    margin-right: 50px;
+}
+
+.input-box > .wrapper > .etc-etc > textarea {
+    width: 600px; height: 180px;
+}
+
+.input-box > .wrapper > .submit > input {
+    width: 700px; height: 46px;
+}
+}
+
+/* PC버전 미디어 쿼리 */
+@media(min-width:1024px) {
+/* main_bar */
+.gnb {
+    align-items: center;
+}
+
+.gnb > li {
+    padding: 0 15px;
+    margin-right: 20px;
+}
+
+.gnb > li:first-child,
+.gnb > li:nth-child(2) {
+    display: block;
+}
+
+/* icon-box */
+.icon-list {
+    display: grid;
+    grid-template-columns: repeat(4,2fr);
+}
+
+.icon-list > li {
+    margin: 10px;
+}
+
+.icon-list > li > p {
+    font-size: 19px;
+}
 }
 
 /* ===== footer ===== */
