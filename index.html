@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/index.css">
+    <script>
+        window.onload = function(){
+            const video = document.getElementById('video');
+                video.play();
+            };
+    </script>
     <title>Document</title>
 </head>
 <body>
@@ -66,7 +72,7 @@
                 </ul>
             </div> <!-- video-content -->
 
-            <video autoplay loop>
+            <video id="video" autoplay loop>
                 <source src="./video/컴포즈커피 X 정해인 '일상편'.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
