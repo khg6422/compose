@@ -233,6 +233,28 @@
     margin-right: 6px;
 }
 
+.true-false {
+    display: flex;
+}
+
+.true-false > #true-false {
+    margin-right: 10px;
+}
+
+.true-false > .radio-flex {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.true-false > .radio-flex > label {
+    margin-bottom: 15px;
+}
+
+.true-false > .radio-flex > label:last-child {
+    margin: 0;
+}
+
 .input-box > .wrapper > div > #address {
     margin-right: 47px;
 }
@@ -275,9 +297,14 @@
     border: none;
 }
 
-/* 모바일버전 미디어 쿼리 */
+/* 태블릿버전 미디어 쿼리 */
 @media(min-width:768px) {
 /* ===== main ===== */
+/* main_bar */
+.main_bar .gnb > li {
+    margin-right: 100px;
+}
+
 /* input-box */
 .input-box > .wrapper > div > input,
 .input-box > .wrapper > div > select {
@@ -287,6 +314,10 @@
 .input-box > .wrapper > div > #region2,
 .input-box > .wrapper > div > #region3 {
     width: 298px;
+}
+
+.true-false > .radio-flex {
+    width: auto;
 }
 
 .input-box > .wrapper > div > #etc-etc {
@@ -304,7 +335,16 @@
 
 /* PC버전 미디어 쿼리 */
 @media(min-width:1024px) {
+/* main_img */
+.main_img > img {
+    height: 1%;
+}
+
 /* main_bar */
+.main_bar > .wrapper {
+    max-width: 1000px;
+}
+
 .gnb {
     align-items: center;
 }
